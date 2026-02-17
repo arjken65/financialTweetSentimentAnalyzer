@@ -2,7 +2,7 @@ import streamlit as st
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 
-MODEL_NAME = "arjken/FinancialTweetSentimentAnalyzer"  # or local path like "./model"
+MODEL_NAME = "arjken/FinancialTweetSentimentAnalyzer"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 @st.cache_resource
