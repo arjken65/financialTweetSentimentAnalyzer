@@ -35,7 +35,7 @@ if st.button("Analyze"):
             predicted_class = 'negative'
         elif predicted_class == 1:
             predicted_class = 'neutral'
-        else:
-            predicted_class == 'positive'
+        elif predicted_class == 2:
+            predicted_class = 'positive'
 
         st.write(f"Predicted sentiment class: {predicted_class}")
