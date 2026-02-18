@@ -32,10 +32,10 @@ if st.button("Analyze"):
             predicted_class = torch.argmax(logits, dim=1).item()
 
         if predicted_class == 0:
-            predicted_class = negative
+            predicted_class = 'negative'
         elif predicted_class == 1:
-            predicted_class = neutral
+            predicted_class = 'neutral'
         else:
-            predicted_class == positive
+            predicted_class == 'positive'
 
         st.write(f"Predicted sentiment class: {predicted_class}")
